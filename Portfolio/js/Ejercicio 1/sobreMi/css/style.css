@@ -1,0 +1,64 @@
+/* SOBRE MI */
+.sobreMi {
+	margin-top: 10%;
+}
+.sobreMi h2{
+	font-size: 2em;
+}
+.sobreMi li{
+	font-size: 1.5em;
+}
+.exclusivo_sobremi {
+	width: 50%;
+	background-color:  #005e0dac;
+	border: solid 1px black;
+	display: flex;
+	flex-direction: column;
+  justify-content: center;
+  align-items: center;
+	padding: 20px;
+	margin: auto;
+}
+.imgtext {
+	padding-top: 30px;
+}
+.imgtext img {
+	margin: 20px;
+	width: 60%;
+	object-fit: cover;
+	border-radius: 50%;
+}
+.imgtext p {
+	font-size: 1.5rem;
+	text-align: center;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.img-rotate:hover{
+	animation: spin 2s linear ;
+	transition: transform 0.5s ease;
+}
+@keyframes spin {
+		100% { transform: rotate(360deg) }
+}
+.estudios {
+	margin: 20px;
+	line-height: 1.5;
+}
+.lenguages {
+	margin: 20px;
+	line-height: 1.5;
+}
+.Idiomas {
+	margin: 20px;
+	line-height: 1.5;
+}
+.sociales {
+	margin: 20px;
+	line-height: 1.5;
+}
+.sociales-link img{
+	transition: transform 0.2s ease-in-out;
+}
+.sociales-link img:hover {
+	transform: scale(0.95);
+}
