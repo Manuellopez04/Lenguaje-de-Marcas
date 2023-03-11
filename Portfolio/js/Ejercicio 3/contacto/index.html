@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ES" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Este es mi portfolio personal" />
+    <meta name="keywords" content="html, css, sass, bootstrap, js, portfolio, proyectos"/>
+    <meta name="language" content="ES" />
+    <meta name="author" content="manuel.lopez@a.vedrunasevillasj.es" />
+    <meta name="robots" content="index,follow" />
+    <meta name="revised" content="Lunes, February 13th, 2023, 19:36pm" />
+    <meta name="viewport" content="width=device-width, initial scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge, chrome1" />
+
+    <title>Contacto</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../css/todo.css" />
+    <link rel="stylesheet" href="../js/app.js" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="logo-nombre">
+        <img src="../img/1.jpg" alt="avatar" />
+        <h1>Manuel López Muñoz</h1>
+      </div>
+      <nav>
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="../sobreMi/index.html">SOBRE MI</a></li>
+        <li><a href="../portafolio/index.html">PORTFOLIO</a></li>
+        <li><a href="index.html">CONTACTO</a></li>
+      </nav>
+    </header>
+    <main>
+      <div class="contenedor contacto">
+        <h2>CONTACTO</h2>
+        <div class="formulario">
+          <form action="mailto:tuMail@a.vedrunasevillasj.es">
+            <div class="grupo">
+              <label for="Nombre">Nombre:</label>
+              <input type="text" id="Nombre" name="Nombre" placeholder="Escribe tu nombre" />
+            </div>
+            <div class="grupo">
+              <label for="Apellidos">Apellidos:</label>
+              <input type="text" id="Apellidos" name="Apellidos" placeholder="Escribe tus apellidos"/>
+            </div>
+            <div class="grupo">
+              <label for="DNI">DNI:</label>
+              <input type="text" id="DNI" name="DNI" placeholder="Escribe tu DNI" />
+            </div>
+            <div class="grupo">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" placeholder="Escribe tu email" />
+            </div>
+            <div class="grupo">
+              <label>Sexo:</label>
+              <div class="radio-group">
+                <input type="radio" name="sexo" value="Masculino" id="masculino" />
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="sexo" value="Femenino" id="femenino" />
+                <label for="femenino">Femenino</label>
+              </div>
+            </div>
+            <div class="grupo">
+              <label for="body">Opinión Portfolio:</label>
+              <textarea name="body" id="body" cols="30" rows="10" placeholder="Escribe tu opinión"></textarea>
+            </div>
+            <div class="grupo">
+              <button type="submit">Enviar</button>
+              <button type="reset">Resetear</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>Gmail personal: mlmmoreno8@gmail.com</p>
+    </footer>
+  </div>
+</body>
+</html>
