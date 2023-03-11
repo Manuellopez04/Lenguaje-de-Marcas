@@ -1,0 +1,244 @@
+/* SOBRE MI */
+.sobreMi {
+	margin-top: 10%;
+}
+.sobreMi li{
+	font-size: 1.5em;
+}
+.exclusivo_sobremi {
+	width: 50%;
+	background-color:  #005e0dac;
+	border: solid 1px black;
+	display: flex;
+	flex-direction: column;
+  justify-content: center;
+  align-items: center;
+	padding: 20px;
+	margin: auto;
+}
+.imgtext {
+	padding-top: 30px;
+}
+.imgtext img {
+	margin: 20px;
+	width: 60%;
+	object-fit: cover;
+	border-radius: 50%;
+}
+.img-rotate:hover{
+	animation: spin 2s linear ;
+	transition: transform 0.5s ease;
+}
+@keyframes spin {
+		100% { transform: rotate(360deg) }
+}
+.estudios {
+	margin: 20px;
+	line-height: 1.5;
+}
+.lenguages {
+	margin: 20px;
+	line-height: 1.5;
+}
+.Idiomas {
+	margin: 20px;
+	line-height: 1.5;
+}
+.sociales {
+	margin: 20px;
+	line-height: 1.5;
+}
+.sociales-link img{
+	transition: transform 0.2s ease-in-out;
+}
+.sociales-link img:hover {
+	transform: scale(0.95);
+}
+/* PORTAFOLIO */
+.portfolio{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	justify-items: center;
+}
+
+.container-card{
+	display: flex;
+	align-items: center;
+	text-align: center;
+	margin: auto;
+}
+
+.exclusivo_portfolio {
+	line-height: 1.5;
+}
+.exclusivo_portfolio li{
+	font-size: 1.5em;
+}
+.container-card{
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	justify-content: center;
+	justify-items: center;
+	margin: 20px;
+}
+.card{
+	width: 20%;
+	margin: 20px;
+	overflow: hidden;
+	background:#fff;
+}
+.card:hover{
+	transform: translateY(-10%);
+}
+.card img{
+	height: 15em;
+}
+.HTML {
+  color: orange;
+}
+.CSS {
+  color: blue;
+}
+.JavaScript{
+  color: #ff00b3;
+}
+/* CONTACTO */
+.contacto {
+	margin-top: 10%;
+	margin-bottom: 10%;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	justify-items: center;
+}
+.formulario {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	justify-items: center;
+	width: 50%;
+	margin: auto;
+	line-height: 2.5;
+}
+label {
+	display: block;
+	font-weight: bold;
+}
+input[type="text"], input[type="email"], textarea {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	font-size: 16px;
+}
+input[type="radio"] {
+	display: inline-block;
+	vertical-align: middle;
+}
+.radio-group label {
+	display: inline-block;
+}
+button[type="submit"] {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+button[type="submit"]:hover {
+	background-color: #3e8e41;
+}
+button:hover {
+	animation: blink 1s infinite;
+}
+@keyframes blink {
+	50% {
+		opacity: 0;
+	}
+}
+button[type="reset"]{
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+@media (min-width: 576px){
+
+    .todosobremi{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .imgtext{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .imgtext p{
+        margin-top: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .imgtext img{
+        max-width: 100%;
+        border-radius: 50%;
+    }
+    
+    .sobremi{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    
+    .sobremi h2{
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+    
+    .sobremi li{
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+    
+    .sociales h2{
+        font-size: 1.5em;
+        margin-top: 20px;
+    }
+    /*Portfolio*/
+    .exclusivo_portfolio{
+        margin-top: 80em;
+    }
+    .container-card{
+    flex-direction: column;
+    }
+
+    .portfolio footer{
+      margin-top: 140%;
+  }
+
+    }
