@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ES" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Este es mi portfolio personal" />
+    <meta name="keywords" content="html, css, sass, bootstrap, js, portfolio, proyectos"/>
+    <meta name="language" content="ES" />
+    <meta name="author" content="manuel.lopez@a.vedrunasevillasj.es" />
+    <meta name="robots" content="index,follow" />
+    <meta name="revised" content="Lunes, February 13th, 2023, 19:36pm" />
+    <meta name="viewport" content="width=device-width, initial scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge, chrome1" />
+
+    <title>Mi Portfolio</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/todo.css" />
+    <script src="js/app.js"> </script>
+  </head>
+  <body>
+    <div class="wrapper"> pon eso en body
+      <header>
+        <div class="logo-nombre">
+          <img src="img/1.jpg" alt="avatar" />
+          <h1>Manuel López Muñoz</h1>
+        </div>
+        <nav>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="sobreMi/index.html">SOBRE MI</a></li>
+          <li><a href="portafolio/index.html">PORTFOLIO</a></li>
+          <li><a href="contacto/index.html">CONTACTO</a></li>
+        </nav>
+      </header>
+      <main>
+        <div class="contenedor sobreMi">
+          <div class="exclusivo_sobremi">
+            <h2>SOBRE MI</h2>
+            <div class="imgtext">
+              <img class="img-rotate" src="img/1.jpg">
+              <p>
+                Hola, me llamo Manuel López Muñoz, tengo 18 años, naci en Sevilla,España, estudie un grado media 
+                de administración y ahora actualmente no tengo experiencia laboral y estoy estudiando 
+                DAM(Ciclo Superior en Desarrollo de Aplicaciones Multiplataforma).
+              </p>
+            </div>
+          </div>
+          <div class="estudios">
+            <h2>Estudios</h2>
+            <li>ESO</li>
+            <li>Grado medio de Administración</li>
+            <li>DAM(Actualmente estudiando)</li>
+          </div>
+          <div class="lenguages">
+              <h2>Lenguages de programacion</h2>
+              <li>Java</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScrip</li>
+              <li>XML</li>
+          </div>
+          <div class="Idiomas">
+              <h2>Idiomas</h2>
+              <li>Español nativo</li>
+              <li>Ingles A2</li>
+          </div>
+          <div class="sociales">
+            <h2>Sitios donde me puedes hablar</h2>
+            <div class="sociales-link">
+              <a href="https://www.instagram.com/_manulopezz04/%22%3E"><img src="img/3.jfif" alt="Logo de Instagram"></a>
+              <a href="https://github.com/Manuellopez04%22%3E"><img src="img/4.png" alt="Logo de GitHub"></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contenedor portfolio">
+          <div class="exclusivo_portfolio">
+            <h2>PORTFOLIO</h2>
+            <form>
+              <label for="language-select">Filtrar por lenguaje:</label>
+              <select id="language-select">
+                <option value="all">Todos</option>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JavaScript">JavaScript</option>
+              </select>
+            </form>
+          </div>
+          <div class="title-cards">
+            <h2>Lenguages utilizados</h2>
+            <div class="container-card">
+              <div class="card">
+                <img src="img/7.svg" />
+                <div class="contenido-card">
+                  <span class="HTML"><h3>HTML</h3></span>
+                  <p></p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/5.png" />
+                <div class="contenido-card">
+                  <span class="CSS"><h3>CSS</h3></span>
+                  <p></p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/6.png" />
+                <div class="contenido-card">
+                  <span class="JavaScript"><h3>JavaScript</h3></span>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="separador" id="contact"></div>
+        <div class="container container-fluid mb-5 vh-75">
+            <h1 id="contacto" class="fs-0 text-center mb-4">Contacto</h1>
+            <form action="mailto:manuel.lopez@a.vedrunasevillasj.es" method="get" class="mt-2 mx-auto">
+                <fieldset class="form-row reset p-4 align-items-center rounded">
+                    <div class="d-flex gap-3">
+                        <legend class="text-light px-2 py-1 rounded d-flex justify-content-around">
+                            <p>Sígueme en mis redes sociales</p>
+                            <a href="https://www.instagram.com/manulopezz04/" target="_blank"><i
+                                    class="fa fa-instagram" id="instagram"></i></a>
+                            <a href="https://https://github.com/manuellopez04" target="_blank"><i
+                                    class="fa fa-github github img-fluid" id="github"></i></a>
+                        </legend>
+                        <legend class="reset px-2 py-1 rounded">Contáctame</legend>
+                    </div>
+
+                    <div class="form-group row g-3 mt-1 mx-auto">
+                        <label for="subject" class="col-sm-2 col-form-label rounded">Asunto:</label>
+                        <div class="col-sm-10">
+                            <input type="text" id="subject" class="form-control text-info" name="subject" required />
+                        </div>
+                    </div>
+                    <div class="form-group row g-3 mt-1 mx-auto">
+                        <label for="cc" class="col-sm-2 col-form-label">CC:</label>
+                        <div class="col input-group mb-2 gap-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text" id="boton-cc">@</div>
+                            </div>
+                            <input type="email" id="cc" class="form-control text-info rounded" name="cc"
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" />
+                        </div>
+                    </div>
+                    <div class="row g-3 mt-2 mx-auto">
+                        <label for="body" class="form-label">Cuerpo del mensaje: </label> <br />
+                        <textarea id="body" class="form-control text-info mt-2 w-10" name="body"
+                            placeholder="Escriba el mensaje..." rows="15" cols="40" required></textarea>
+                    </div>
+                    <div class="row g-3 mt-2 mx-auto d-flex justify-content-center">
+                        <input id="sendBttn" class="btn" type="submit" value="Send" />
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+      </main>
+      <footer>
+        <a href="mailto:exdesy.design@gmail.com"><p>Gmail personal: mlmmoreno8@gmail.com</p>
+      </footer>
+      <script>
+        // Obtener el input del asunto
+const asunto = document.querySelector('#subject');
+const correo = document.querySelector('#cc');
+const mensaje = document.querySelector('#body');
+
+// Agregar un escucha de evento para cuando el input pierde el focus
+asunto.addEventListener('blur', () => {
+  // Verificar si el input está vacío
+  if (asunto.value.trim() === '') {
+    // Cambiar el borde del input a rojo
+    asunto.style.border = '2px solid red';
+
+    // Agregar un mensaje de error debajo del campo si no existe uno
+    let errorText = asunto.parentNode.querySelector('span');
+    if (!errorText) {
+      errorText = document.createElement('span');
+      errorText.style.color = 'red';
+      asunto.parentNode.appendChild(errorText);
+    }
+    errorText.innerText = 'Este campo no puede estar vacío';
+  } else {
+    // Si el input es válido, cambiar el borde a verde
+    asunto.style.border = '2px solid green';
+    const errorText = asunto.parentNode.querySelector('span');
+    if (errorText) {
+      errorText.remove();
+    }
+  }
+});
+
+correo.addEventListener('blur', () => {
+  // Verificar si el input está vacío o no es un correo electrónico válido
+  const ccRegex = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/i;
+  if (correo.value.trim() === '' || !ccRegex.test(correo.value.trim())) {
+    // Cambiar el borde del input a rojo
+    correo.style.border = '2px solid red';
+
+    // Agregar un mensaje de error debajo del campo si no existe uno
+    let errorText = correo.parentNode.querySelector('span');
+    if (!errorText) {
+      errorText = document.createElement('span');
+      errorText.style.color = 'red';
+      correo.parentNode.appendChild(errorText);
+    }
+    errorText.innerText = 'Debe introducir un correo electrónico válido';
+  } else {
+    // Si el input es válido, cambiar el borde a verde
+    correo.style.border = '2px solid green';
+
+    // Eliminar cualquier mensaje de error previo
+    const errorText = correo.parentNode.querySelector('span');
+    if (errorText) {
+      errorText.remove();
+    }
+  }
+});
+
+mensaje.addEventListener('blur', () => {
+  // Verificar si el input está vacío
+  if (mensaje.value.trim() === '') {
+    // Cambiar el borde del input a rojo
+    mensaje.style.border = '2px solid red';
+
+    // Agregar un mensaje de error debajo del campo si no existe uno
+    let errorText = mensaje.parentNode.querySelector('span');
+    if (!errorText) {
+      errorText = document.createElement('span');
+      errorText.style.color = 'red';
+      mensaje.parentNode.appendChild(errorText);
+    }
+    errorText.innerText = 'Este campo no puede estar vacío';
+  } else {
+    // Si el input es válido, cambiar el borde a verde
+    mensaje.style.border = '';
+    const errorText = mensaje.parentNode.querySelector('span');
+    if (errorText) {
+      errorText.remove();
+    }
+  }
+});
+      </script>
+    </div>
+  </body>
+</html>
